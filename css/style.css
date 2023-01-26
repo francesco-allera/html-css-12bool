@@ -1,0 +1,22 @@
+/* styling cols, parenting, and text */
+[class^="col-"] {
+    background-color: pink;
+    height: 180px;
+    padding: 5px;
+    position: relative;
+    text-align: center;
+    border: 1px solid #000;
+}
+
+[class^="col-"] > .container > [class^="col-"] {
+    height: 168px; /* 180px height - 10px padding -2px border */
+    background: lightcoral;
+    border: 1px solid #fff;
+}
+
+[class^="col-"] > span {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
